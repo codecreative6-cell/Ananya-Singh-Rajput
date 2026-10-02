@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Ananya Singh Rajput 🎂</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ──── LOADING SCREEN ──── -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader-content">
+      <div class="loader-heart">💖</div>
+      <div class="loader-name">Ananya</div>
+      <div class="loader-text" id="loaderText">Loading Magic...</div>
+      <div class="loader-bar-wrap" id="loaderBarWrap">
+        <div class="loader-bar"></div>
+      </div>
+      <button class="enter-btn hidden" id="enterBtn">Tap to Open ✨</button>
+    </div>
+  </div>
+
+  <!-- ──── STAR BACKGROUND ──── -->
+  <div class="stars-wrap" id="starsWrap"></div>
+
+  <!-- ──── FLOATING PARTICLES ──── -->
+  <div class="particle-wrap" id="particleWrap"></div>
+
+  <!-- ──── FIREWORKS ──── -->
+  <div class="fireworks-wrap" id="fireworksWrap"></div>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              1. HERO – Full-Bleed Cinematic
+═══════════════════════════════════════════════════ -->
+  <section class="hero">
+    <!-- Floating Emojis (Left Half) -->
+    <div class="hero-floating-emoji fe-1">🌸</div>
+    <div class="hero-floating-emoji fe-2">✨</div>
+    <div class="hero-floating-emoji fe-3">🦋</div>
+    <div class="hero-floating-emoji fe-4">💖</div>
+    <div class="hero-floating-emoji fe-5">🎂</div>
+    <div class="hero-floating-emoji fe-6">🎉</div>
+    <div class="hero-floating-emoji fe-7">🌟</div>
+    <div class="hero-floating-emoji fe-8">👑</div>
+    <div class="hero-floating-emoji fe-9">💫</div>
+    <div class="hero-floating-emoji fe-10">🎀</div>
+    <div class="hero-floating-emoji fe-11">🌺</div>
+    <div class="hero-floating-emoji fe-12">🥳</div>
+
+    <!-- LEFT: centered content -->
+    <div class="hero-content">
+      <span class="hero-spark-tag">
+        <span class="spark">✦</span> A Special Day <span class="spark">✦</span>
+      </span>
+      <h1 class="hero-main-title">Happy Birthday</h1>
+      <h2 class="hero-name">Ananya 🎂</h2>
+      <hr class="hero-line" />
+      <p class="hero-tagline">Wishing you a day filled with love, laughter & magic ✨</p>
+
+      <div class="hero-pills">
+        <div class="hero-pill"><span class="pill-emoji">💖</span> Love</div>
+        <div class="hero-pill"><span class="pill-emoji">🌟</span> Shine</div>
+        <div class="hero-pill"><span class="pill-emoji">🌸</span> Beauty</div>
+        <div class="hero-pill"><span class="pill-emoji">🦋</span> Grace</div>
+        <div class="hero-pill"><span class="pill-emoji">👑</span> Queen</div>
+      </div>
+
+      <div class="hero-celebrate">
+        <span class="cel-emoji">🎉</span>
+        <span class="cel-text">It's Her Special Day!</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Creative Photo Frame -->
+    <div class="hero-bg">
+      <!-- Floating Emojis (Right Half) -->
+      <div class="hero-floating-emoji fe-13">💕</div>
+      <div class="hero-floating-emoji fe-14">✨</div>
+      <div class="hero-floating-emoji fe-15">🌸</div>
+      <div class="hero-floating-emoji fe-16">🦋</div>
+      <div class="hero-floating-emoji fe-17">🎈</div>
+      <div class="hero-floating-emoji fe-18">🧁</div>
+
+      <div class="photo-frame">
+        <span class="frame-decor dec-1">✨</span>
+        <span class="frame-decor dec-2">🌟</span>
+        <span class="frame-decor dec-3">✦</span>
+        <div class="photo-mask">
+          <img src="img/iiimggg (1).jpg" alt="Ananya Singh Rajput" />
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              2. EMOJI PHOTO STRIP
+═══════════════════════════════════════════════════ -->
+  <section class="emoji-strip-section reveal">
+    <div class="section-header">
+      <span class="section-tag">📸 Snapshots</span>
+      <h2 class="section-title">Beautiful Memories</h2>
+      <p class="section-subtitle">Hover to feel the love in every photo</p>
+    </div>
+
+    <div class="emoji-strip-wrapper">
+      <div class="emoji-strip-track" id="emojiStrip"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              3. HEXAGONAL MOSAIC
+═══════════════════════════════════════════════════ -->
+  <section class="hex-section reveal">
+    <div class="section-header">
+      <span class="section-tag">🔮 Mosaic</span>
+      <h2 class="section-title">She Shines in Every Shape</h2>
+      <p class="section-subtitle">A kaleidoscope of beautiful moments</p>
+    </div>
+    <div class="hex-grid" id="hexGrid"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              4. 3D CAROUSEL
+═══════════════════════════════════════════════════ -->
+  <section class="carousel-section reveal">
+    <div class="section-header">
+      <span class="section-tag">💫 Spotlight</span>
+      <h2 class="section-title">Radiance All Around</h2>
+      <p class="section-subtitle">Watch her glow from every angle</p>
+    </div>
+    <div class="carousel-container" id="carouselContainer"></div>
+    <div class="carousel-floor"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              5. BIRTHDAY MESSAGE
+═══════════════════════════════════════════════════ -->
+  <section class="message-section reveal">
+    <div class="section-header">
+      <span class="section-tag">💌 From the Heart</span>
+      <h2 class="section-title">A Message For You</h2>
+    </div>
+    <div class="message-card">
+      <div class="quote-mark">"</div>
+      <p class="message-text">
+        Ananya, you light up every room you walk into.
+        Your smile is a gift to everyone lucky enough to see it.
+        On this beautiful day, we celebrate YOU — your kindness,
+        your strength, your laughter, and your boundless spirit.
+        May this new year of your life be your most magical chapter yet.
+        Here's to you, always and forever! 🥂
+      </p>
+      <div class="message-sign">With all the love in the world ♥</div>
+    </div>
+
+    <div class="hearts-row">
+      <div class="heart-item"><span class="heart-icon">💖</span><span class="heart-label">Endless Love</span></div>
+      <div class="heart-item"><span class="heart-icon">🌟</span><span class="heart-label">Shine Bright</span></div>
+      <div class="heart-item"><span class="heart-icon">🎉</span><span class="heart-label">Celebrate</span></div>
+      <div class="heart-item"><span class="heart-icon">🦋</span><span class="heart-label">Beautiful Soul</span></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              6. MASONRY PHOTO GRID
+═══════════════════════════════════════════════════ -->
+  <section class="masonry-section reveal">
+    <div class="section-header">
+      <span class="section-tag">🖼️ Gallery</span>
+      <h2 class="section-title">Wall of Memories</h2>
+      <p class="section-subtitle">Every photo holds a thousand words of love</p>
+    </div>
+    <div class="masonry-grid" id="masonryGrid"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              7. BOOK OF MOMENTS – Horizontal Scroll
+═══════════════════════════════════════════════════ -->
+  <section class="book-section reveal">
+    <div class="section-header">
+      <span class="section-tag">📖 Her Story</span>
+      <h2 class="section-title">Book of Moments</h2>
+      <p class="section-subtitle">Swipe through the pages of her beautiful journey</p>
+    </div>
+    <div class="book-scroll-wrapper">
+      <div class="book-track" id="bookTrack"></div>
+    </div>
+    <div class="book-scroll-hint"><span>← swipe to explore →</span></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════
+              8. FOOTER
+═══════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-glow"></div>
+    <span class="footer-name">Happy Birthday, Ananya Singh Rajput!</span>
+    <p class="footer-sub">🎈 May all your wishes come true 🎈</p>
+    <p class="footer-made">Made with ♥ just for you</p>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════════════
+               JAVASCRIPT
+═══════════════════════════════════════════════════ -->
+  <!-- ──── BACKGROUND MUSIC ──── -->
+  <audio id="bgMusic" loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
